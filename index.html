@@ -6,23 +6,96 @@
         <title>Rhodium.</title>
         <link rel="stylesheet" href="assets/css/style.css" />
         <script src="assets/js/libs/anime-2.2.0/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="assets/js/anime.js"></script>
+        <script src="assets/js/site.js"></script>
+        <script src="assets/js/license.js"></script>
     </head>
     <body>
         <div class="header">
             <img class="header-image" src="assets/img/Rhodium-logo.svg">
             <div class="header-link-container">
-                <div class="header-link" style="color: #f2f5f4;"><b>Rhodium.</b></div>
-                <div class="header-link" onclick="window.open('https://github.com/RhodiumBot/Rhodium')"><b>GitHub</b></div>
-                <div class="header-link" onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=455392659096207370&permissions=8&scope=bot')"><b>Invite</b></div>
-                <div class="header-link disabled">Commands</div>
+                <div class="header-link" id="button-main" style="color: #f2f5f4; font-weight:bold">Rhodium.</div>
+                <div class="header-link" onclick="window.open('https://github.com/RhodiumBot/Rhodium')">GitHub</div>
+                <div class="header-link" onclick="window.open('https://discordapp.com/oauth2/authorize?client_id=455392659096207370&permissions=8&scope=bot')">Invite</div>
+                <div class="header-link disabled" id="button-commands">Commands</div>
             </div>
         </div>
-        <div class="main-page" style="text-align: center"><br><br>
+
+
+        <div class="page" id="page-main" style="text-align: center; display: block"><br><br>
             <img src="assets/img/Rhodium-logo.svg"><br><br>
             <h1>The only bot you'll ever need.</h1>
-            This page is currently under construction.<br>
-            Please come back later to find out more.
+
+            <div class="showcase-container">
+                <img class="showcase-image" src="assets/img/help.png">
+                <span class="showcase-headline">A variety of commands. Not.</span><br><br>
+                <section class="showcase-text">
+                    To make it short, there are enough bots which have a shitton of commands that you'll never really use.<br>
+                    So we cropped our commands to the minimum to annoy you as little as possible.<br><br>
+                    There is still everything you need - and some commands are grouped into one.
+                </section>
+            </div>
+
+            <div class="showcase-container right">
+                <img class="showcase-image right" src="assets/img/pages.png">
+                <span class="showcase-headline right">The ultimate Discord tool. In one Application.</span><br><br>
+                <section class="showcase-text right">
+                    The commands are as flexible as possible. They adapt to every server and show you exactly what you need.<br><br>
+                    No matter if you're a developer or a server administrator, you'll see everything you need at one spot.
+                </section>
+            </div>
+
+            <div class="showcase-container">
+                <img class="showcase-image" src="assets/img/daily.png">
+                <span class="showcase-headline">We didn't forget about the fun.</span><br><br>
+                <section class="showcase-text">
+                    After all, the fun didn't come too short for this project. We included a currency system that features daily credits, a shop and also trading with other users.
+                </section>
+            </div>
+
+            <div class="showcase-container" style="text-align: center">
+                <span class="showcase-headline">100% open source.</span><br><br>
+                Licensed under Apache-2.0. Free for you to use.<br><br>
+                <img src="assets/img/github.png" class="footer-image">
+            </div>
+
+
+            What are you waiting for?<br><br>
+            <button class="button">Invite me!</button>
+        </div>
+
+
+        <div class="page" id="page-commands">
+            Here you can see all the commands.
+        </div>
+
+
+        <div class="page margin" id="page-imprint">
+            <span class="showcase-headline">The Rhodium Bot Project</span><br><br>
+            The Rhodium Bot Project is owned and lead by René V. (RMC) and Ron31.<br>
+            For any further information about personal and contact data, please contact <a href="mailto:info@rmcprod.me">info@rmcprod.me</a>
+        </div>
+
+
+        <div class="page margin" id="page-about">
+            <span class="showcase-headline">The Rhodium Bot Project</span><br><br>
+            The Rhodium Bot Project is a hobby project by the two passionate developers <a href="https://github.com/rmcproductions">RMC</a> and <a href="https://github.com/Ron31">Ron31.</a>
+        </div>
+
+
+        <div class="page margin" id="page-license">
+            
+        </div>
+
+
+        <!--FOOTER-->
+        <br><br><br>
+        <div class="footer">
+            <span class="links">
+                <span class="link" id="link-imprint">Imprint</span> | <span class="link" id="link-about">About</span> | <span class="link" id="link-license">License</span>
+            </span>
+            <span class="links right">© <span id="year">2019</span> The Rhodium Bot Project</span>
         </div>
     </body>
 </html>
